@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_homepage"
+    android:background="@color/colorO2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.tars.navigation_1.Club_LoopViewPager
+            android:id="@+id/viewpager_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:background="@color/colorO2"/>
+
+        <TextView
+            android:id="@+id/text_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..........穿越金曲 聲歷其鏡.........."
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorO2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorO2"
+            android:paddingTop="5dp"
+            android:gravity="center">
+            <ListView
+                android:id="@+id/listview_homepage"
+                android:layout_width="330dp"
+                android:layout_height="180dp"
+                android:divider="@color/colorO2"
+                android:dividerHeight="11dp"
+                android:background="@color/colorO2"/>
+        </LinearLayout>
+        <!--<HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#5B5B5B"
+            android:fadingEdgeLength="0.0dip"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/toolbar_items_homepage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"></LinearLayout>
+
+        </HorizontalScrollView>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/colorO2"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" -  熱門貼文  - "
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/colorO"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"/>
+
+        <ListView
+            android:id="@+id/listview_hot_posts"
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            android:background="@color/colorPrimary"
+            android:divider="@drawable/line"
+            android:dividerHeight="10dp"
+            android:layerType="software"/>
+    </LinearLayout>
+</ScrollView>

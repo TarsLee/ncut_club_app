@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 设置从右边拖进来的动画 android:duration指定动画持续时间 -->
+    <!-- fromXDelta：动画起始时，X坐标上的位置；fromYDelta：动画起始时Y坐标上的位置 -->
+    <!-- toXDelta：动画结束时，X坐标上的位置；toYDelta：动画结束时Y坐标上的位置 -->
+    <!-- "100%"：表示自身View的100%，即自身View的起始位置 -->
+    <!-- "100%p"：表示父层View的100% -->
+    <!-- fromXDelta="100%p"， toXDelta="0" 表示子View几何中心点从父View几何中心点左边一倍于父View长度处到父View几何中心点左边0倍于父View长度处（即到父子View几何中心点重合） -->
+    <translate
+        android:duration="@android:integer/config_mediumAnimTime"
+        android:fromXDelta="100%p"
+        android:toXDelta="0" />
+</set>

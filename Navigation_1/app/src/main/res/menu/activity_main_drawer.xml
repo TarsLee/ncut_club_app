@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/homepage"
+            android:title="首頁" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/group"
+            android:title="社團總覽" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/package_box"
+            android:title="社團Box" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/pipes"
+            android:title="活動Pipe" />
+    </group>
+
+</menu>

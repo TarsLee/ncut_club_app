@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorO2"
+    android:layout_width="match_parent"
+    android:layout_height="185dp"
+    android:gravity="center|bottom">
+
+    <ImageView
+        android:id="@+id/img_clubs_overview"
+        android:adjustViewBounds="true"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@color/colorO2" />
+    <TextView
+        android:id="@+id/title_clubs_overview"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorO2"
+        android:text="資訊工程系系學會"/>
+
+</LinearLayout>

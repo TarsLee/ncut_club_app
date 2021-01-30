@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorO2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/club_bg">
+            <ImageView
+                android:id="@+id/club_intor_image"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:layout_weight="8"
+                android:paddingTop="15dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/image7png"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/club_introduce_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".........11屆資工系學會........."
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingRight="11dp"
+                    android:paddingLeft="11dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorO"
+                    android:background="@color/colorO2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--<TextView
+            android:id="@+id/club_introduce_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="資工系學會已邁入13Th!!\n資工系學會與你開創資工系的未來!!\n資工系學會→學會辦公室:勤益科大 國秀樓 B1 001教室"
+            android:textSize="15dp"
+            android:background="#cfcfcf"
+            android:gravity="center_horizontal" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/colorO2"
+            android:gravity="center">
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="330dp"
+                android:layout_height="160dp"
+                android:background="@color/colorO2"
+                android:divider="@drawable/line2"
+                android:dividerHeight="2dp"
+                android:layerType="software"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/colorO2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" -  歷史活動  - "
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/colorO"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"/>
+
+        <ListView
+            android:id="@+id/listview_history"
+            android:layout_width="match_parent"
+            android:layout_height="610dp"
+            android:background="@color/colorPrimary"
+            android:divider="@drawable/line"
+            android:dividerHeight="10dp"
+            android:layerType="software"/>
+
+    </LinearLayout>
+</ScrollView>

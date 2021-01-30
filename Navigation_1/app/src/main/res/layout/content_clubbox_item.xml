@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="7dp"
+    android:layout_margin="7dp"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/linear_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image9"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="14sp"
+                android:layout_margin="4dp"
+                android:text=".........11屆資工系學會........."
+                android:textColor="@color/colorO"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+                <ImageView
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/side"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/info_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:textAlignment="textStart"
+                        android:layout_weight="5"
+                        android:text="內容內容內容內容內容..."
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="10sp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="start" />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/info_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:text="更多"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

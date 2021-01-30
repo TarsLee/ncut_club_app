@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:minHeight="33dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_weight="11"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="11dp"
+                android:gravity="bottom"
+                android:text="活動標題活動標題活動標題"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:gravity="bottom"
+                    android:src="@drawable/play_button"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="6dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
